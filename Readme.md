@@ -26,10 +26,10 @@ The optimal angle identified (~30°) deviates from the theoretical 45° expectat
 The results indicate that yield per unit area (l/m²) decreased with an increase in area which reveals that solar stills with smaller basin area give much beter yield than sills with larger surface area.
 
                                             
-                                             BASIC PRINCIPLE
-  Heat from the sun (solar energy) heats the water it evaporates and settles upon the a transpaent glass sitting above the water gradually the water drips down the glass into a container as it cools down. This method of removing salt from seawater makes seawater potable i.e drinkable, it can also be used to purify sewage water by sepearting harmful salts and compounds from water. This method is used at pilot scalee for for olive mill wastewater treatment[1]. 
+                                             Introduction
+This method of removing salt from seawater makes seawater potable i.e drinkable, it can also be used to purify sewage water by sepearting harmful salts and compounds from water. This method is used at pilot scalee for for olive mill wastewater treatment[1]. 
  
- Overview:   This project presents a computational simulation of a solar desalination system using a simplified thermal energy balance model. The goal is to estimate freshwater yield under different geometric and operating conditions. The simulation models evaporation in a solar still by considering solar heat input, thermal losses, and latent heat of vaporization. This study employs different cover angles, basin surface areas, and operating times.
+ This project presents a computational simulation of a solar desalination system using a simplified thermal energy balance model. The goal is to estimate freshwater yield under different geometric and operating conditions. The simulation models evaporation in a solar still by considering solar heat input, thermal losses, and latent heat of vaporization. This study employs different cover angles, basin surface areas, and operating times.
 
 Freshwater yield is recorded, and a mass–time curve is plotted to analyze change in rate of evaporation. 
 
