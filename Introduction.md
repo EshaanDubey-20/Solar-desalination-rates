@@ -57,11 +57,11 @@ IMPORTANT FORMULAES
               n.b=base heat absorption efficency of still  (unitless)
               30 degrees is most optimal angle for maximum desalination. Closer the angle to 30 more effeciently the water will absorb the heat hence more water will be evaporated.
 
-FILES ATTACHED
-0. License
-1. Readme.md
-2. Solar-desaination-rates.py
-3. Evaporated-mass-vs-hours-curve
-4. Solar-still-data.csv 
-5. Desalination-through-solar-still-process-diagram
+          FILES ATTACHED
+          0. License
+          1. Readme.md
+          2. Solar-desaination-rates.py
+          3. Evaporated-mass-vs-hours-curve
+          4. Solar-still-data.csv 
+          5. Desalination-through-solar-still-process-diagram
 
