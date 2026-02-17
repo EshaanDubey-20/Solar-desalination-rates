@@ -1,7 +1,7 @@
      import numpy as np
 import matplotlib.pyplot as plt
 
-# ===============================
+# ==============================
 # Physics Constants
 # ===============================
 g = 9.81           # gravity (m/s^2)
