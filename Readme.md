@@ -72,15 +72,18 @@ Python
               n.b=base heat absorption efficency of still  (unitless)
               30 degrees is most optimal angle for maximum desalination. Closer the angle to 30 more effeciently the water will absorb the heat hence more water will be evaporated.
 
-                                           SIMULATIONAL APPROACH
+
+                                          SIMULATIONAL APPROACH
 A computer-based simulation was developed using python to calculate water yield of a solar still which perform desalination of a constant area under different operaating conditions. This simulation simulated various operating conditions and based on energy output, evaporation rates and losses. 
 This simulation consists of folowing variables;
 1.Basin area - 0.02-0.05 metre^2
 2.Cover angle - 10-90 degrees 
 3. Operating time - 0.2-0.5 hours 
+                                           
                                            Thermal Modelling
 The heat absorbed by saline water whose efficiency of heat absorption varied because of cover angle. Heat loss to to atmosphere was calculated using difference in ambient temperature of surroundings and water.
 The net heat used up during evaporation was calculated using latent heat of vaporisation of water which was used to find out the mass of water that had been converted to vapours. 
+                                         
                                          Iterative Computation 
 1. Solar heat was calculated
 2. Loss to environment was calculated
