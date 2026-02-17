@@ -1,4 +1,4 @@
-                                                           # SOLAR DESALINATION RATES
+                                                            SOLAR DESALINATION RATES
   Repository Contents
 - Simulation scripts  
 - Optimization modules  
@@ -8,7 +8,7 @@
 
                                                      Key Findings
 1. Optimal cover angle was found near 30°, confirming typical solar still design literature.
-2. Freshwater yield increases with basin area but shows diminishing yield per unit area.
+2. Freshwater yield scales withs with basin area but shows diminishing yield per unit area.
 3. Extremely steep cover angles reduce efficiency due to lower effective heat absorption.
 4. Micro-scale optimization (0.02–0.05 m²) revealed strong sensitivity to geometric variations.
 
@@ -21,9 +21,10 @@
                                                 Abstract
     To demonstrate that computational modelling and optimization can be used to engineer effecient designs. THis study shows that inclination at moderate angles outperforms the more extreme deisgns and demonstrates the relation between condensation efficiency, thermal absoption and geometry. 
                                               
-                                             Insight 
+                                            Efficiency 
 The optimal angle identified (~30°) deviates from the theoretical 45° expectation in ideal evaporation models, highlighting the influence of thermal losses and geometry in practical systems. 
-The results indicate that yield per unit area (l/m²) decreased with an increase in area which reveals that solar stills with smaller basin area give much beter yield than sills with larger surface area.
+The results indicate that yield per unit area (l/m²) decreased with an scales with in area which reveals that solar stills with smaller basin area give much beter yield than sills with larger surface area.
+This phenomena can be attributed to surface area of large-stills which causes increased loss of thermal energy to the surroundings.
 
                                             
                                              Introduction
@@ -82,7 +83,7 @@ The following study assumes
 
 
                                           SIMULATIONAL APPROACH
-A computer-based simulation was developed using python to calculate water yield of a solar still which perform desalination of a constant area under different operaating conditions. This simulation simulated various operating conditions and based on energy output, evaporation rates and losses. 
+A computer-based simulation was developed using python to calculate water yield of a solar still which perform desalination of a constant area under different operaating conditions. This simulation simulated various operating conditions and based on energy output, evaporation trend and losses. 
 This simulation consists of folowing variables;
 1.Basin area - 0.02-0.05 m²
 2.Cover angle - 10-90° 
@@ -114,9 +115,9 @@ The resultant values were visualized using Python's Matplotlib library. Mass–t
  
                                            Limitations
 
-1. The model assumes steady-state thermal behavior.
+1. The model assumes steady-state thermal behavior, which may overestimate efficiency under fluctuating conditions.
 2. Changes in heat due to environment fluctuation were not included.
-3. No experimental validation was performed.
+3. While simplified, the model captures first-order behavior and serves as a conceptual framework instead of industrial tool.
 
                     
                                           
