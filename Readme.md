@@ -1,19 +1,19 @@
                                                            # SOLAR DESALINATION RATES
-    Repository Contents
+  Repository Contents
 - Simulation scripts  
 - Optimization modules  
 - CSV datasets  
 - Result plots
 
-Key Findings
 
+                                                     Key Findings
 1. Optimal cover angle was found near 30°, confirming typical solar still design literature.
 2. Freshwater yield increases with basin area but shows diminishing yield per unit area.
 3. Extremely steep cover angles reduce efficiency due to lower effective heat absorption.
 4. Micro-scale optimization (0.02–0.05 m²) revealed strong sensitivity to geometric variations.
 
 
-  Tech stack
+                                                         Tech stack
  1. Python
  2.  NumPy
  3.  MatPlotLib
