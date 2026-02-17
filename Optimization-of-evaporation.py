@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # ==============================
 # Physics Constants
-# ===============================
+
 g = 9.81           # gravity (m/s^2)
 rho = 1.225        # air density (kg/m^3)
 Cd = 0.47          # drag coefficient (sphere)
@@ -12,9 +12,9 @@ m = 0.145          # mass (kg) - cricket ball
 v0 = 30            # initial velocity (m/s)
 dt = 0.01          # timestep
 
-# ===============================
+
 # Projectile Simulator
-# ===============================
+
 def simulate_range(angle_deg):
     angle = np.radians(angle_deg)
 
@@ -39,9 +39,9 @@ def simulate_range(angle_deg):
     return x  # horizontal range
 
 
-# ===============================
+
 # Optimization Algorithm
-# ===============================
+
 angles = np.linspace(1, 89.9, 200)  # avoid 0 and 90
 ranges = []
 
