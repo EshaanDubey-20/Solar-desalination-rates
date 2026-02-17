@@ -40,8 +40,11 @@ IMPORTANT FORMULAES
                    n=n.b*(1−0.002⋅(θ−30)2)
               n=efficiency of heat absorption of solar energy based on cover angle(unitless)
               n.b=base heat absorption efficency of still  (unitless)
-              30 degrees is most optimal angle for maximum desalination. Closer the angle to 30 more effeciently the water will absorb                  the heat hence more water will be evaporated.
-   Files attached-
+              30 degrees is most optimal angle for maximum desalination. Closer the angle to 30 more effeciently the water will absorb                the heat hence more water will be evaporated.
+FILES ATTACHED ()
+0. License
 1. Readme.md
-2. 
+2. Solar-desaination-rates.py
+3. 
+4. 
 3
