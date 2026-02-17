@@ -10,14 +10,15 @@
     7. Optimzation-curve-cover-angle
     8. Optimization-curve-basin-area
 
-   BASIC PRINCIPLE
-    Heat from the sun (solar energy) heats the water it evaporates and settles upon the a transpaent glass sitting above the water gradually the water drips down the glass into a container as it cools down. This method of removing salt from seawater makes seawater potable i.e drinkable, it can also be used to purify sewage water by sepearting harmful salts and compounds from water. This method is used at pilot scalee for for olive mill wastewater treatment[1]. 
+                                              
+                                              BASIC PRINCIPLE
+  Heat from the sun (solar energy) heats the water it evaporates and settles upon the a transpaent glass sitting above the water gradually the water drips down the glass into a container as it cools down. This method of removing salt from seawater makes seawater potable i.e drinkable, it can also be used to purify sewage water by sepearting harmful salts and compounds from water. This method is used at pilot scalee for for olive mill wastewater treatment[1]. 
     
 
 How to run? (in command prompt enter)
 python solar_desalination.py 
  
- OBJECTIVE:  Simulate thermal desalination(using python) to optimize basin area and cover angle for maximum water yield of fresh potable water. 
+ OBJECTIVE:   Simulate thermal desalination(using python) to optimize basin area and cover angle for maximum water yield of fresh potable water. 
 
                                                IMPORTANT TERMINOLOGY 
 Basin area: area of land where water ends into.
@@ -104,7 +105,8 @@ To optimize the model brute-force search method was used to find the ideal angle
                                             Visulaisation 
 Resultant values after simulation were plotted on a computer-generated graph usin matplotlib funcyion in python.
  
-CITATIONS
+                                            
+                                            CITATIONS
    [1] https://www.sciencedirect.com/science/article/abs/pii/S0959652622022934
    
           
