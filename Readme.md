@@ -1,24 +1,38 @@
                                                            # SOLAR DESALINATION RATES
-    FILES ATTACHED
-    0. License
-    1. Readme.md
-    2. Solar-desaination-rates.py
-    3. Evaporated-mass-vs-hours-curve
-    4. Solar-still-data.csv 
-    5. Optimization-of-curve-angle.py 
-    6. Optimization-of-basin-area.py
-    7. Optimzation-curve-cover-angle
-    8. Optimization-curve-basin-area
+    Repository Contents
+- Simulation scripts  
+- Optimization modules  
+- CSV datasets  
+- Result plots
 
+Key Findings
+
+1. Optimal cover angle was found near 30°, confirming typical solar still design literature.
+2. Freshwater yield increases with basin area but shows diminishing yield per unit area.
+3. Extremely steep cover angles reduce efficiency due to lower effective heat absorption.
+4. Micro-scale optimization (0.02–0.05 m²) revealed strong sensitivity to geometric variations.
+
+
+  Tech stack
+ 1. Python
+ 2.  NumPy
+ 3.  MatPlotLib
+
+                                                Abstract
+    To demonstrate that computational modelling and optimization can be used to engineer effecient designs. THis study shows that inclination at moderate angles outperforms the more extreme deisgns and demonstrates the relation between condensation efficiency, thermal absoption and geometry. 
                                               
-                                              BASIC PRINCIPLE
-  Heat from the sun (solar energy) heats the water it evaporates and settles upon the a transpaent glass sitting above the water gradually the water drips down the glass into a container as it cools down. This method of removing salt from seawater makes seawater potable i.e drinkable, it can also be used to purify sewage water by sepearting harmful salts and compounds from water. This method is used at pilot scalee for for olive mill wastewater treatment[1]. 
-    
+                                             Insight 
+The optimal angle identified (~30°) deviates from the theoretical 45° expectation in ideal evaporation models, highlighting the influence of thermal losses and geometry in practical systems. 
+The results indicate that yield per unit area (l/m²) decreased with an increase in area which reveals that solar stills with smaller basin area give much beter yield than sills with larger surface area.
 
-How to run? (in command prompt enter)
-python solar_desalination.py 
+                                            
+                                             BASIC PRINCIPLE
+  Heat from the sun (solar energy) heats the water it evaporates and settles upon the a transpaent glass sitting above the water gradually the water drips down the glass into a container as it cools down. This method of removing salt from seawater makes seawater potable i.e drinkable, it can also be used to purify sewage water by sepearting harmful salts and compounds from water. This method is used at pilot scalee for for olive mill wastewater treatment[1]. 
  
- OBJECTIVE:   Simulate thermal desalination(using python) to optimize basin area and cover angle for maximum water yield of fresh potable water. 
+ Overview:   This project presents a computational simulation of a solar desalination system using a simplified thermal energy balance model. The goal is to estimate freshwater yield under different geometric and operating conditions. The simulation models evaporation in a solar still by considering solar heat input, thermal losses, and latent heat of vaporization. This study employs different cover angles, basin surface areas, and operating times.
+
+Freshwater yield is recorded, and a mass–time curve is plotted to analyze change in rate of evaporation. 
+
 
                                                IMPORTANT TERMINOLOGY 
 Basin area: area of land where water ends into.
@@ -33,17 +47,10 @@ The following study assumes
 4. No wind losses 
 5. Perfect condensation efficiency
 6. Water density ≈ 1 kg/L
+7. Simplified linear-heat model
+8. No wind or connective disturbance
  
-MATERIALS
-Aluminium foil
-Plane glass/plastic 
-Transparent glass/cup to collect water
-Broad mouthed transparent container
-Water 
-Stands
-Measuring cup 
-Python 
-.CSV
+
 
                                                       MATHAMETICAL MODEL
 1.         Evaporation mass 'm'
@@ -56,7 +63,7 @@ Python
 2.          Solar energy absorbed 'Q.f'
                    Q.f=I*A*n*t
             Q.f=total solar energy absorbed by water in container(Joules)
-            A=area of container (metre^2)
+            A=area of container (m²)
             n=efficiency of heat absorption of solar energy based on cover angle(unitless)
             t=time water sits under sun (seconds)
 
@@ -71,14 +78,14 @@ Python
                    n=n.b*(1−0.002⋅(θ−30)2)
               n=efficiency of heat absorption of solar energy based on cover angle(unitless)
               n.b=base heat absorption efficency of still  (unitless)
-              30 degrees is most optimal angle for maximum desalination. Closer the angle to 30 more effeciently the water will absorb the heat hence more water will be evaporated.
+              30° is most optimal angle for maximum desalination. Closer the angle to 30 more effeciently the water will absorb the heat hence more water will be evaporated.
 
 
                                           SIMULATIONAL APPROACH
 A computer-based simulation was developed using python to calculate water yield of a solar still which perform desalination of a constant area under different operaating conditions. This simulation simulated various operating conditions and based on energy output, evaporation rates and losses. 
 This simulation consists of folowing variables;
-1.Basin area - 0.02-0.05 metre^2
-2.Cover angle - 10-90 degrees 
+1.Basin area - 0.02-0.05 m²
+2.Cover angle - 10-90° 
 3. Operating time - 0.2-0.5 hours 
                                            
                                            Thermal Modelling
@@ -94,20 +101,37 @@ The net heat used up during evaporation was calculated using latent heat of vapo
 6. Mass vs time curve is plotted
 
                                           Data storage
-The simulation resuts were stored in .csv format they documented-
+The simulation resuts were stored in CSV format they documented-
 a) Cover angle 
 b) basin area 
 c) Time for given evaporation
 
                                            Optimization
-To optimize the model brute-force search method was used to find the ideal angle for maximaum heat absorption by water. This included finding the ideal angle between 10-90 degrees and and basin area between 0.02-0.5 metre square. This was implemented using the model where the highest yield of water was tracked. 
+To optimize the model brute-force search method was used to find the ideal angle for maximaum heat absorption by water. This included finding the ideal angle between 10-90° and and basin area between 0.02-0.5 m². This was implemented using the model where the highest yield of water was tracked. 
 
                                             Visulaisation 
-Resultant values after simulation were plotted on a computer-generated graph usin matplotlib funcyion in python.
+The resultant values were visualized using Python's Matplotlib library. Mass–time curves and optimization plots were generated to illustrate performance trends and identify optimal configurations.
  
-                                            
+                                           Limitations
+
+1. The model assumes steady-state thermal behavior.
+2. Changes in heat due to environment fluctuation were not included.
+3. No experimental validation was performed.
+
+                    
+                                          
                                             CITATIONS
    [1] https://www.sciencedirect.com/science/article/abs/pii/S0959652622022934
    
-          
+          FILES ATTACHED
+    0. License
+    1. Readme.md
+    2. Solar-desaination-rates.py
+    3. Evaporated-mass-vs-hours-curve
+    4. Solar-still-dataCSV 
+    5. Optimization-of-curve-angle.py 
+    6. Optimization-of-basin-area.py
+    7. Optimzation-curve-cover-angle
+    8. Optimization-curve-basin-area
+
 
