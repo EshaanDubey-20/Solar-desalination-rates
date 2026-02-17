@@ -9,7 +9,7 @@
                                                      Key Findings
 1. Optimal cover angle was found near 30°, confirming typical solar still design literature.
 2. Freshwater yield scales withs with basin area but shows diminishing yield per unit area.
-3. Extremely steep cover angles reduce efficiency due to lower effective heat absorption.
+3. Extremely small cover angles (0-10) reduce efficiency due to lower effective heat absorption.
 4. Micro-scale optimization (0.02–0.05 m²) revealed strong sensitivity to geometric variations.
 
 
