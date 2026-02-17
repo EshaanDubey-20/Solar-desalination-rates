@@ -1,10 +1,9 @@
-
 import numpy as np
 import matplotlib.pyplot as plt
 
-# ----------------------
+
 # SETTINGS
-# ----------------------
+
 area = 0.15
 angles = [10, 25, 30, 45, 60, 75, 89.9]
 time_hours = np.arange(0.5, 5.5, 0.5)
@@ -12,17 +11,17 @@ time_hours = np.arange(0.5, 5.5, 0.5)
 temp_water = 40
 temp_ambient = 25
 
-# ----------------------
+
 # CONSTANTS
-# ----------------------
+
 L_v = 2.26e6
 I = 900
 eta_base = 0.65
 k_loss = 3
 
-# ----------------------
+
 # MODEL
-# ----------------------
+
 def evap(angle, t):
     eta_angle = eta_base * (1 - 0.0012*(angle - 30)**2)
     Q_in = I * area * eta_angle * t * 3600
@@ -30,9 +29,9 @@ def evap(angle, t):
     m = (Q_in - Q_loss) / L_v
     return max(m, 1e-6)  # avoid log(0)
 
-# ================================
+
 # FIND OPTIMAL ANGLE
-# ================================
+
 total_yield = []
 for angle in angles:
     total = sum(evap(angle, t) for t in time_hours)
@@ -41,9 +40,9 @@ for angle in angles:
 optimal_angle = angles[np.argmax(total_yield)]
 print(f"✅ Optimal angle detected: {optimal_angle}°")
 
-# ================================
+
 # GRAPH 1 — TIME CURVES + OPTIMAL MARK
-# ================================
+
 plt.figure(figsize=(9,6))
 
 for angle in angles:
@@ -62,23 +61,6 @@ plt.legend(title="Cover Angle", ncol=2)
 plt.tight_layout()
 plt.show()
 
-# ================================
-# GRAPH 2 — YIELD vs ANGLE CURVE
-# ================================
-plt.figure(figsize=(8,5))
 
-plt.plot(angles, total_yield, marker='o', linewidth=3)
 
-# Mark optimal point
-opt_y = max(total_yield)
-plt.scatter(optimal_angle, opt_y, s=120)
-plt.text(optimal_angle+1, opt_y,
-         f"Optimal ≈ {optimal_angle}°",
-         fontsize=10)
 
-plt.title("Total Yield vs Cover Angle")
-plt.xlabel("Cover Angle (degrees)")
-plt.ylabel("Total Evaporated Water (kg ≈ L)")
-plt.grid(True)
-plt.tight_layout()
-plt.show()
