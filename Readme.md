@@ -1,10 +1,5 @@
                                                             SOLAR DESALINATION RATES
-  Repository Contents
-- Simulation scripts  
-- Optimization modules  
-- CSV datasets  
-- Result plots
-
+  
 
                                                      Key Findings
 1. Optimal cover angle was found near 30°, confirming typical solar still design literature.
