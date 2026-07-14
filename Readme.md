@@ -10,13 +10,7 @@
 1. Optimal cover angle was found near 30°, confirming typical solar still design literature.
 2. Freshwater yield scales withs with basin area but shows diminishing yield per unit area.
 3. Extremely small cover angles (0-10) reduce efficiency due to lower effective heat absorption.
-4. Micro-scale optimization (0.02–0.05 m²) revealed strong sensitivity to geometric variations.
 
-
-                                                         Tech stack
- 1. Python
- 2.  NumPy
- 3.  MatPlotLib
 
                                                 Abstract
     To demonstrate that computational modelling and optimization can be used to engineer effecient designs. THis study shows that inclination at moderate angles outperforms the more extreme deisgns and demonstrates the relation between condensation efficiency, thermal absoption and geometry. 
@@ -101,28 +95,15 @@ The net heat used up during evaporation was calculated using latent heat of vapo
 5. Freshwater yield is recorded
 6. Mass vs time curve is plotted
 
-                                          Data storage
-The simulation resuts were stored in CSV format they documented-
-a) Cover angle 
-b) basin area 
-c) Time for given evaporation
-
+                                          D
                                            Optimization
-To optimize the model brute-force search method was used to find the ideal angle for maximaum heat absorption by water. This included finding the ideal angle between 10-90° and and basin area between 0.02-0.5 m². This was implemented using the model where the highest yield of water was tracked. 
+To optimize the model brute-force search method was used to find the ideal angle for maximaum heat absorption by water. This included finding the ideal angle between 10-90° and and basin area between 0.02-0.5 m². This was implemented using the model where the highest yield of water 
 
-                                            Visulaisation 
-The resultant values were visualized using Python's Matplotlib library. Mass–time curves and optimization plots were generated to illustrate performance trends and identify optimal configurations.
- 
                                            Limitations
 
 1. The model assumes steady-state thermal behavior, which may overestimate efficiency under fluctuating conditions.
 2. Changes in heat due to environment fluctuation were not included.
-3. While simplified, the model captures first-order behavior and serves as a conceptual framework instead of industrial tool.
 
-                    
-                                          
-                                            CITATIONS
-   [1] https://www.sciencedirect.com/science/article/abs/pii/S0959652622022934
    
           FILES ATTACHED
     0. License
