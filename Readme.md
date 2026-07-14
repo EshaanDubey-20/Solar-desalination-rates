@@ -72,7 +72,7 @@ The following study assumes
 
 
                                           SIMULATIONAL APPROACH
-A computer-based simulation was developed using python to calculate water yield of a solar still which perform desalination of a constant area under different operaating conditions. This simulation simulated various operating conditions and based on energy output, evaporation trend and losses. 
+A computer-based simulation was developed using python to calculate water yield of a solar still which perform desalination of a constant area under different operaating conditions. This simulation simulated various operating conditions and based on energy output andlosses. 
 This simulation consists of folowing variables;
 1.Basin area - 0.02-0.05 m²
 2.Cover angle - 10-90° 
@@ -82,7 +82,7 @@ This simulation consists of folowing variables;
 The heat absorbed by saline water whose efficiency of heat absorption varied because of cover angle. Heat loss to to atmosphere was calculated using difference in ambient temperature of surroundings and water.
 The net heat used up during evaporation was calculated using latent heat of vaporisation of water which was used to find out the mass of water that had been converted to vapours. 
                                          
-                                         Iterative Computation 
+                                        
 1. Solar heat was calculated
 2. Loss to environment was calculated
 3. Losses were subtracted and net heat used is calculated
@@ -92,8 +92,7 @@ The net heat used up during evaporation was calculated using latent heat of vapo
 
                                           D
                                            Optimization
-To optimize the model brute-force search method was used to find the ideal angle for maximaum heat absorption by water. This included finding the ideal angle between 10-90° and and basin area between 0.02-0.5 m². This was implemented using the model where the highest yield of water 
-
+This included finding the ideal angle between 10-90° and and basin area between 0.02-0.5 m². We used class 12 mathematics based application of derivatives to find optimal rate.
                                            Limitations
 
 1. The model assumes steady-state thermal behavior, which may overestimate efficiency under fluctuating conditions.
